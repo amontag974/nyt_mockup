@@ -9,15 +9,15 @@
     <body>
         <nav>
             <div class="nav-container">
-                <div class="nav-and-search">
-                    <button class="site-nav">
+                <div class="nav-buttons">
+                    <button>
                         <svg viewBox="0 0 16 16">
                             <rect x="1" y="3" fill="#333" width="14" height="2"></rect>
                             <rect x="1" y="7" fill="#333" width="14" height="2"></rect>
                             <rect x="1" y="11" fill="#333" width="14" height="2"></rect>
                         </svg>
                     </button>
-                    <button class="site-nav search">
+                    <button>
                         <svg viewBox="0 0 16 16">
                             <path fill="#333" d="M11.3,9.2C11.7,8.4,12,7.5,12,6.5C12,3.5,9.5,1,6.5,1S1,3.5,1,6.5S3.5,12,6.5,12c1,0,1.9-0.3,2.7-0.7l3.3,3.3c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L11.3,9.2zM6.5,10.3c-2.1,0-3.8-1.7-3.8-3.8c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C10.3,8.6,8.6,10.3,6.5,10.3z"></path>
                         </svg>
@@ -26,7 +26,7 @@
                 <img class="nyt-logo" src="images/nyt_logo.png">
                 <div class="membership">
                     <button class="btn-blue">Subscribe Now</button>
-                    <button class="btn-blue">Log In</button>
+                    <button class="btn-blue log-in">Log In</button>
                 </div>
 
             </div>
@@ -48,23 +48,23 @@
                 </div>
                 <div class="date-and-social">
                     <p class="date">March 17, 2014</p>
-                    <div class="social-links">
-                        <button class="social-link-button facebook">
+                    <div class="social">
+                        <button class="btn-social facebook">
                             <svg class="css-1acmxgr" viewBox="0 0 7 15" width="7" height="15">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4.775 14.163V7.08h1.923l.255-2.441H4.775l.004-1.222c0-.636.06-.977.958-.977H6.94V0H5.016c-2.31 0-3.123 1.184-3.123 3.175V4.64H.453v2.44h1.44v7.083h2.882z" fill="#000"></path>
                             </svg>
                         </button>
-                        <button class="social-link-button twitter">
+                        <button class="btn-social twitter">
                             <svg viewBox="0 0 13 10" class="css-1acmxgr" width="13" height="10">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.987 2.772l.025.425-.429-.052c-1.562-.2-2.927-.876-4.086-2.011L.93.571.784.987c-.309.927-.111 1.906.533 2.565.343.364.266.416-.327.2-.206-.07-.386-.122-.403-.096-.06.06.146.85.309 1.161.223.434.678.858 1.176 1.11l.42.199-.497.009c-.481 0-.498.008-.447.19.172.564.85 1.162 1.606 1.422l.532.182-.464.277a4.833 4.833 0 0 1-2.3.641c-.387.009-.704.044-.704.07 0 .086 1.047.572 1.657.762 1.828.564 4 .32 5.631-.641 1.159-.685 2.318-2.045 2.859-3.363.292-.702.583-1.984.583-2.6 0-.398.026-.45.507-.927.283-.277.55-.58.6-.667.087-.165.078-.165-.36-.018-.73.26-.832.226-.472-.164.266-.278.584-.78.584-.928 0-.026-.129.018-.275.096a4.79 4.79 0 0 1-.755.294l-.464.148-.42-.286C9.66.467 9.335.293 9.163.24 8.725.12 8.055.137 7.66.276c-1.074.39-1.752 1.395-1.674 2.496z" fill="#000"></path>
                             </svg>
                         </button>
-                        <button class="social-link-button contact">
+                        <button class="btn-social contact">
                             <svg viewBox="0 0 15 9" class="css-1acmxgr" width="15" height="9">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M.906 8.418V0L5.64 4.76.906 8.419zm13 0L9.174 4.761 13.906 0v8.418zM7.407 6.539l-1.13-1.137L.907 9h13l-5.37-3.598-1.13 1.137zM1.297 0h12.22l-6.11 5.095L1.297 0z" fill="#000"></path>
                             </svg>
                         </button>
-                        <button class="social-link-button share">
+                        <button class="btn-social share">
                             <svg class="css-107sgp6" viewBox="0 0 16 13" width="16" height="13">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.406 5.359L8.978 0v3.215C3.82 3.215.406 8.107.406 12.66 1.653 9.133 4.29 7.517 8.978 7.517v3.2l6.428-5.358z" fill="#000"></path>
                             </svg>
@@ -179,39 +179,41 @@
                     <p class="article-text">So the future of the cosmos is perhaps bright and fecund, but do not bother asking about going any deeper into the past.</p>
                     <p class="article-text">We might never know what happened before inflation, at the very beginning, because inflation erases everything that came before it. All the chaos and randomness of the primordial moment are swept away, forever out of our view.</p>
                     <p class="article-text">“If you trace your cosmic roots,” said Abraham Loeb, a Harvard-Smithsonian astronomer who was not part of the team, “you wind up at inflation.”</p>
-                    <span>A version of this article appears in print on March 18, 2014, Section A, Page 1 of the New York edition with the headline: Space Ripples Reveal Big Bang’s Smoking Gun.</span>
-                    <ul>
-                        <li>Order Reprints</li>
-                        <li>Today’s Paper</li>
-                        <li>Subscribe</li>
-                    </ul>
-                    <button class="btn-blue">Read Comments</button>
-                    <button class="social-link-button facebook">
-                        <svg class="css-1acmxgr" viewBox="0 0 7 15" width="7" height="15">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.775 14.163V7.08h1.923l.255-2.441H4.775l.004-1.222c0-.636.06-.977.958-.977H6.94V0H5.016c-2.31 0-3.123 1.184-3.123 3.175V4.64H.453v2.44h1.44v7.083h2.882z" fill="#000"></path>
-                        </svg>
-                    </button>
-                    <button class="social-link-button twitter">
-                        <svg viewBox="0 0 13 10" class="css-1acmxgr" width="13" height="10">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.987 2.772l.025.425-.429-.052c-1.562-.2-2.927-.876-4.086-2.011L.93.571.784.987c-.309.927-.111 1.906.533 2.565.343.364.266.416-.327.2-.206-.07-.386-.122-.403-.096-.06.06.146.85.309 1.161.223.434.678.858 1.176 1.11l.42.199-.497.009c-.481 0-.498.008-.447.19.172.564.85 1.162 1.606 1.422l.532.182-.464.277a4.833 4.833 0 0 1-2.3.641c-.387.009-.704.044-.704.07 0 .086 1.047.572 1.657.762 1.828.564 4 .32 5.631-.641 1.159-.685 2.318-2.045 2.859-3.363.292-.702.583-1.984.583-2.6 0-.398.026-.45.507-.927.283-.277.55-.58.6-.667.087-.165.078-.165-.36-.018-.73.26-.832.226-.472-.164.266-.278.584-.78.584-.928 0-.026-.129.018-.275.096a4.79 4.79 0 0 1-.755.294l-.464.148-.42-.286C9.66.467 9.335.293 9.163.24 8.725.12 8.055.137 7.66.276c-1.074.39-1.752 1.395-1.674 2.496z" fill="#000"></path>
-                        </svg>
-                    </button>
-                    <button class="social-link-button contact">
-                        <svg viewBox="0 0 15 9" class="css-1acmxgr" width="15" height="9">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M.906 8.418V0L5.64 4.76.906 8.419zm13 0L9.174 4.761 13.906 0v8.418zM7.407 6.539l-1.13-1.137L.907 9h13l-5.37-3.598-1.13 1.137zM1.297 0h12.22l-6.11 5.095L1.297 0z" fill="#000"></path>
-                        </svg>
-                    </button>
-                    <button class="social-link-button share">
-                        <svg class="css-107sgp6" viewBox="0 0 16 13" width="16" height="13">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.406 5.359L8.978 0v3.215C3.82 3.215.406 8.107.406 12.66 1.653 9.133 4.29 7.517 8.978 7.517v3.2l6.428-5.358z" fill="#000"></path>
-                        </svg>
-                    </button>
+                    <div class="publication-info">
+                        <span>A version of this article appears in print on March 18, 2014, Section A, Page 1 of the New York edition with the headline: Space Ripples Reveal Big Bang’s Smoking Gun. <a>Order Reprints</a> | <a>Today's Paper</a> | <a>Subscribe</a></span>
+                    </div>
+                    <div class="article-footer-buttons">
+                        <button class="btn-blue btn-footer-comments">Read Comments</button>
+                        <div class="article-footer-social">
+                            <button class="btn-social facebook">
+                                <svg class="css-1acmxgr" viewBox="0 0 7 15" width="7" height="15">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.775 14.163V7.08h1.923l.255-2.441H4.775l.004-1.222c0-.636.06-.977.958-.977H6.94V0H5.016c-2.31 0-3.123 1.184-3.123 3.175V4.64H.453v2.44h1.44v7.083h2.882z" fill="#000"></path>
+                                </svg>
+                            </button>
+                            <button class="btn-social twitter">
+                                <svg viewBox="0 0 13 10" class="css-1acmxgr" width="13" height="10">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.987 2.772l.025.425-.429-.052c-1.562-.2-2.927-.876-4.086-2.011L.93.571.784.987c-.309.927-.111 1.906.533 2.565.343.364.266.416-.327.2-.206-.07-.386-.122-.403-.096-.06.06.146.85.309 1.161.223.434.678.858 1.176 1.11l.42.199-.497.009c-.481 0-.498.008-.447.19.172.564.85 1.162 1.606 1.422l.532.182-.464.277a4.833 4.833 0 0 1-2.3.641c-.387.009-.704.044-.704.07 0 .086 1.047.572 1.657.762 1.828.564 4 .32 5.631-.641 1.159-.685 2.318-2.045 2.859-3.363.292-.702.583-1.984.583-2.6 0-.398.026-.45.507-.927.283-.277.55-.58.6-.667.087-.165.078-.165-.36-.018-.73.26-.832.226-.472-.164.266-.278.584-.78.584-.928 0-.026-.129.018-.275.096a4.79 4.79 0 0 1-.755.294l-.464.148-.42-.286C9.66.467 9.335.293 9.163.24 8.725.12 8.055.137 7.66.276c-1.074.39-1.752 1.395-1.674 2.496z" fill="#000"></path>
+                                </svg>
+                            </button>
+                            <button class="btn-social contact">
+                                <svg viewBox="0 0 15 9" class="css-1acmxgr" width="15" height="9">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M.906 8.418V0L5.64 4.76.906 8.419zm13 0L9.174 4.761 13.906 0v8.418zM7.407 6.539l-1.13-1.137L.907 9h13l-5.37-3.598-1.13 1.137zM1.297 0h12.22l-6.11 5.095L1.297 0z" fill="#000"></path>
+                                </svg>
+                            </button>
+                            <button class="btn-social share">
+                                <svg class="css-107sgp6" viewBox="0 0 16 13" width="16" height="13">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.406 5.359L8.978 0v3.215C3.82 3.215.406 8.107.406 12.66 1.653 9.133 4.29 7.517 8.978 7.517v3.2l6.428-5.358z" fill="#000"></path>
+                                </svg>
+                            </button>
+                        </div>                        
+                    </div>
+                    
                 </div>
             </section>
         </div>
         <section class="additional-articles">
             <div class="additional-articles-container">
-                <div class="same-genre">
+                <div class="genre">
                     <h3 class="title-genre">More in Space and Astronomy</h3>
                     <div class="external-article">
                         <a class="external-article-link">
@@ -324,6 +326,292 @@
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+            <div class="footer-divider"> </div>
+            <div class="footer-container">
+                <img src="images/nyt_logo.png">
+                <a class="home-page-link">Go to Home Page »</a>
+                <div class="footer-external">
+                    <h3 class="footer-section-title">NEWS</h3>
+                    <ul>
+                        <li class="footer-section-link">
+                            <a>Home Page</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>World</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>U.S.</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Politics</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Election 2020</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>New York</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Business</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Tech</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Science</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Sports</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Obituaries</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Today's Paper</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Corrections</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-external">
+                    <h3 class="footer-section-title">OPINION</h3>
+                    <ul>
+                        <li class="footer-section-link">
+                            <a>Today's Opinion</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Op-Ed Columnists</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Editorials</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Op-Ed Contributors</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Letters</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Sunday Review</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Video: Opinion</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-external">
+                    <h3 class="footer-section-title">ARTS</h3>
+                    <ul>
+                        <li class="footer-section-link">
+                            <a>Today's Arts</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Art & Design</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Books</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Dance</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Movies</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Music</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Pop Culture</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Television</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Theater</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Video: Arts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-external">
+                    <h3 class="footer-section-title">LIVING</h3>
+                    <ul>
+                        <li class="footer-section-link">
+                            <a>At Home</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Automobiles</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Crossword</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Education</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Food</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Health</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Jobs</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Love</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Magazine</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Parenting</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Real Estate</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Recipes</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Style</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>T Magazine</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Travel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-external">
+                    <h3 class="footer-section-title">MORE</h3>
+                    <ul>
+                        <li class="footer-section-link">
+                            <a>Reader Center</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Wirecutter</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Live Events</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>The Learning Network</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Tools & Services</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Multimedia</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Photography</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Video</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Newsletters</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>TimesMachine</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>NYT Store</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Times Journeys</a>
+                        </li>
+                        <li class="footer-section-link">
+                            <a>Manage My Account</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-external">
+                    <h3 class="footer-section-title">SUBSCRIBE</h3>
+                    <ul>
+                        <li class="footer-section-subscribe-list-link">
+                            <a>Home Delivery</a>
+                        </li>
+                        <li class="footer-section-subscribe-list-link">
+                            <a>Digital Subscriptions</a>
+                        </li>
+                        <li class="footer-section-subscribe-list-link">
+                            <a>Crossword</a>
+                        </li>
+                        <li class="footer-section-subscribe-list-link">
+                            <a>Cooking</a>
+                        </li>
+                        <li class="footer-section-corporate-link">
+                            <a>Email Newsletters</a>
+                        </li>
+                        <li class="footer-section-corporate-link">
+                            <a>Corporate Subscriptions</a>
+                        </li>
+                        <li class="footer-section-corporate-link">
+                            <a>Education Rate</a>
+                        </li>
+                        <li class="footer-section-alternate-link">
+                            <a>Mobile Applications</a>
+                        </li>
+                        <li class="footer-section-alternate-link">
+                            <a>Replica Edition</a>
+                        </li>
+                        <li class="footer-section-alternate-link">
+                            <a>Español</a>
+                        </li>
+                        <li class="footer-section-alternate-link">
+                            <a>中文网</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <ul class="footer-copyright-list">
+                        <li class="footer-copyright-link">
+                            <a>© 2020 The New York Times Company</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>NYTCo</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Contact Us</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Work with us</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Advertise</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>T Brand Studio</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Your Ad Choices</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Privacy</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Terms of Service</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Terms of Sale</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Site Map</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Help</a>
+                        </li>
+                        <li class="footer-copyright-link">
+                            <a>Subscriptions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
